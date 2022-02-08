@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "705507248310",
+    "project_id": "my-fit-log-app",
+    "storage_bucket": "my-fit-log-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705507248310:android:c2f025e903086de7b7be17",
+        "android_client_info": {
+          "package_name": "com.example.my_fit_log_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705507248310-hcc3c37jgcasa0kngrjul1uln4h1acvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt48ROlcqE9Jnrsv5P9KZvDfI8a9dMkLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705507248310-hcc3c37jgcasa0kngrjul1uln4h1acvp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "705507248310-gbn6cmg5bh751pbvsv6hokgel5auh72c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.myFitLogApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
