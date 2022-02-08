@@ -128,6 +128,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_dotenv",
+      "rootUri": "file:///Users/miladsmacbook/Development/Tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_dotenv-4.0.0-nullsafety.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/miladsmacbook/Development/Tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4",
       "packageUri": "lib/",
@@ -278,7 +284,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-02-07T23:29:10.370909Z",
+  "generated": "2022-02-08T02:44:11.087224Z",
   "generator": "pub",
   "generatorVersion": "2.16.0-134.0.dev"
 }

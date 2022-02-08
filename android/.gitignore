@@ -6,6 +6,7 @@ gradle-wrapper.jar
 /local.properties
 GeneratedPluginRegistrant.java
 android/app/src/main/res/values/keys.xml
+ios/Runner/APIKey.plist
 
 
 # Remember to never publicly share your keystore.
