@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart' as DotEnv;
+import 'package:my_fit_log_app/screens/dashboard/page/dashboard.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -33,6 +34,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'MyFitLog',
+        home: Dashboard(),
         // home: isLoggedIn ? Dashboard() : const OnBoardingPage(),
     );
   }
