@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart' as DotEnv;
 import 'package:my_fit_log_app/screens/dashboard/page/dashboard.dart';
@@ -16,7 +17,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(MyApp());
+  runApp(
+    MyApp());
 }
 
 
@@ -31,12 +33,25 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     final isLoggedIn = FirebaseAuth.instance.currentUser != null;
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'MyFitLog',
-        home: Dashboard(),
-        // home: isLoggedIn ? Dashboard() : const OnBoardingPage(),
+    return CupertinoApp(
+      home: CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+      middle: Text('Dashboard'),
+    ),
+      child: 
+      Center(
+        child: Icon(CupertinoIcons.share)
+        ),
+  ),
+  debugShowCheckedModeBanner: false,
+
     );
+    // MaterialApp(
+    //     debugShowCheckedModeBanner: false,
+    //     title: 'MyFitLog',
+    //     home: Dashboard(),
+    //     // home: isLoggedIn ? Dashboard() : const OnBoardingPage(),
+    // );
   }
 
  Future selectNotification(String? payload) async {
