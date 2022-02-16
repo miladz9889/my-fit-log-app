@@ -13,7 +13,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       child: CupertinoNavigationBar(
-        backgroundColor: Colors.indigo,
+        backgroundColor: CupertinoColors.systemIndigo,
         middle: Text('Dashboard'),
       
       ),
