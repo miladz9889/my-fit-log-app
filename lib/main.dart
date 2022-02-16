@@ -33,17 +33,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     final isLoggedIn = FirebaseAuth.instance.currentUser != null;
     return CupertinoApp(
-      home: CupertinoPageScaffold(
-      navigationBar: CupertinoNavigationBar(
-      middle: Text('Dashboard'),
-    ),
-      child: 
-      Center(
-        child: Icon(CupertinoIcons.share)
-        ),
-  ),
+      home: Dashboard(),
   debugShowCheckedModeBanner: false,
-
     );
     // MaterialApp(
     //     debugShowCheckedModeBanner: false,
