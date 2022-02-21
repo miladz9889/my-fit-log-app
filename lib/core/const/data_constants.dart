@@ -1,7 +1,6 @@
-
-
-
-
+import 'package:my_fit_log_app/core/const/path_constants.dart';
+import 'package:my_fit_log_app/core/const/text_constants.dart';
+import '../../screens/onboarding/widget/onBoarding_tile.dart';
 
 class DataConstants {
   // Onboarding
@@ -24,9 +23,9 @@ class DataConstants {
   ];
 
   // Workouts
-  static final List<Workout> workouts = [
+  // static final List<Workout> workouts = [
    
-  ];
+  // ];
 
   // static final List<Workout> homeWorkouts = [
   //   Workout(exercises, notes, rating, time, type, date),
