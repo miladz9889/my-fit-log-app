@@ -5,6 +5,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../core/const/color_constants.dart';
 import '../../../core/const/text_constants.dart';
 import '../../../core/services/validation_service.dart';
+import '../../common_widgets/fitness_button.dart';
+import '../../common_widgets/fitness_text_field.dart';
 import '../bloc/signup_bloc.dart';
 
 
@@ -15,27 +17,28 @@ class SignUpContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-     child: Container(
-       width: double.infinity,
-       height: double.infinity,
-       color: ColorConstants.white,
-       child: Stack(
-         children: [
-           _createMainData(context),
-           BlocBuilder<SignUpBloc, SignUpState>(
-             builder: (context, state) {
-               if(state is LoadingState){
-                 return _createLoading();
-               } else if(state is NextTabBarPageState || state is ErrorState){
-                 return sizedBox();
-               }
-               return sizedBox();
-             },
-           )
-         ]
-       ),
-     ), 
-    );
+      child: Center(child: Text("need to implement sign up page")),);
+    //  child: Container(
+    //    width: double.infinity,
+    //    height: double.infinity,
+    //    color: ColorConstants.white,
+    //    child: Stack(
+    //      children: [
+    //        _createMainData(context),
+    //        BlocBuilder<SignUpBloc, SignUpState>(
+    //          builder: (context, state) {
+    //         //    if(state is LoadingState){
+    //         //      return _createLoading();
+    //         //    } else if(state is NextTabBarPageState || state is ErrorState){
+    //         //      return sizedBox();
+    //         //    }
+    //         //    return sizedBox();
+    //          },
+    //        )
+    //      ]
+    //    ),
+    //  ), 
+    // );
   }
 
 
