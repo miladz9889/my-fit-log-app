@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-
 import '../../../core/const/color_constants.dart';
 import '../../../core/const/data_constants.dart';
 import '../bloc/onboarding_bloc.dart';
