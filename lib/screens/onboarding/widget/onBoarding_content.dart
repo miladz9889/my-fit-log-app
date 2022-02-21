@@ -1,8 +1,11 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
+import '../../../core/const/color_constants.dart';
+import '../../../core/const/data_constants.dart';
 import '../bloc/onboarding_bloc.dart';
 
 
@@ -57,7 +60,7 @@ Widget _createStatic(OnboardingBloc bloc) {
               dotsCount: 3,
               position: bloc.pageIndex.toDouble(),
               decorator: DotsDecorator(
-                color: Colors.grey,
+                color: CupertinoColors.systemGrey,
                 activeColor: ColorConstants.primaryColor,
               ),
             );
@@ -74,7 +77,7 @@ Widget _createStatic(OnboardingBloc bloc) {
                 builder: (context, value, _) => CircularPercentIndicator(
                       radius: 110,
                       backgroundColor: ColorConstants.primaryColor,
-                      progressColor: Colors.black,
+                      progressColor: CupertinoColors.black,
                       percent: 1 - value,
                       center: Material(
                         shape: CircleBorder(),

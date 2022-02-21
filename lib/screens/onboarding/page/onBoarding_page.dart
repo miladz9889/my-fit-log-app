@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import 'package:my_fit_log_app/screens/sign_up/page/sign_up_page.dart';
 import '../bloc/onboarding_bloc.dart';
+import '../widget/onBoarding_content.dart';
+
 
 
 
@@ -25,8 +27,8 @@ class OnBoardingPage extends StatelessWidget {
           Navigator.of(context).pushReplacement(
             CupertinoPageRoute(
               builder: (_) {
-                return RegisterView();
-              },
+                return const SingUpPage();
+              },    
             ),
           );
         },

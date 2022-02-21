@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:my_fit_log_app/screens/dashboard/page/dashboard.dart';
 import 'firebase_options.dart';
+import 'screens/onboarding/page/onBoarding_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +34,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     final isLoggedIn = FirebaseAuth.instance.currentUser != null;
     return CupertinoApp(
-      home: isLoggedIn ? Dashboard() : const OnBoardingPage();
+      home: isLoggedIn ? Dashboard() : const OnBoardingPage(),
   debugShowCheckedModeBanner: false,
     );
     // MaterialApp(
